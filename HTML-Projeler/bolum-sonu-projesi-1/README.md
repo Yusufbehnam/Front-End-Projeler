@@ -1,0 +1,1 @@
+Sadece HTML ve "https://simplecss.org/ " kullanarak yapılmış bir projedir.

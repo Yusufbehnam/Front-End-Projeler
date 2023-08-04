@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 html {
     font-size: 15px;
 
@@ -12,9 +16,7 @@ html {
     --very-dark-blue: hsl(240, 100%, 5%);
 }
 
-*{
-    box-sizing: border-box;
-}
+
 
 body {
     margin: 0;
@@ -23,7 +25,19 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+/* BASE END */
 
+/* HELPER */
+.w-100 {
+    width: 100%;
+}
+
+.bt-none {
+    border-bottom: none;
+}
+/* HELPER END */
+
+/* NAV */
 
 nav , .container {
     width: 1100px;
@@ -50,4 +64,73 @@ a {
 nav > ul > li > a:hover {
     text-decoration: underline;
 } 
+/* NAV END */
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+    margin-top: 60px;
+
+}
+
+ .container > section {
+    flex: 2;
+    /* background-color: red; */
+} 
+
+
+
+.info {
+    display: flex;
+    /* gap: 30px; */
+}
+
+.info h1 {
+    font-size: 3rem;
+    margin-top: 20px 0 0;
+}
+
+.info > .item {
+    flex : 1
+}
+
+.item-detail {
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin-top: 20px;
+}
+
+.item-detail > a.btn {
+    margin-top: 40px;
+    padding: 15px 40px;
+    background-color: var(--soft-red);
+    color: var(--off-white);
+    display: inline-block;
+}
+
+.container > aside {
+    flex: 1;
+    background-color: var(--very-dark-blue);
+    padding: 20px;
+}
+
+.container > aside > h2 {
+    color: var(--soft-orange);
+    margin-top: 10px;
+    font-size: 3rem;
+}
+
+aside > .item {
+    margin-bottom: 30px;
+    border: 1px solid --dark-grayish-blue
+}
+
+aside > .item > h3
+{
+    color: var(--off-white);
+}
+
+aside > .item > p {
+    color: var(--grayish-blue);
+}
